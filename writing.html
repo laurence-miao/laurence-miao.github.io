@@ -1,0 +1,15 @@
+---
+layout: page
+title: writing
+permalink: /writing/
+description: Blog posts and paper summaries, in reversed chronological order.
+---
+{%- comment -%} Entries come from _data/writing.yml {%- endcomment -%}
+{%- assign items = site.data.writing | sort: 'date' | reverse -%}
+{%- assign years = items | group_by_exp: 'item', "item.date | date: '%Y'" -%}
+<div class="publications">
+  {%- for year in years %}
+  <h2 class="bibliography">{{ year.name }}</h2>
+  {% include entries.html items=year.items %}
+  {%- endfor %}
+</div>

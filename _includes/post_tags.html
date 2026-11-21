@@ -1,0 +1,7 @@
+{%- assign p = include.post -%}
+<i class="fa-solid fa-calendar fa-sm" aria-hidden="true"></i> {{ p.date | date: '%Y' }}
+{%- if p.tags.size > 0 %} &nbsp; &middot; &nbsp;
+  {%- for tag in p.tags %}
+<i class="fa-solid fa-hashtag fa-sm" aria-hidden="true"></i> {{ tag }}{% unless forloop.last %} &nbsp; {% endunless %}
+  {%- endfor -%}
+{%- endif -%}

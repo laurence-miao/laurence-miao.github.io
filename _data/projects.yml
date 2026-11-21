@@ -1,0 +1,20 @@
+# Shown on /projects/ and on the home page, in this order.
+#
+# Fields: title (required), abbr (short badge), venue, description,
+#         links (name + url).
+
+- title: video-stream-bridge
+  abbr: ML Toy
+  venue: GitHub repository
+  links:
+    - name: Code
+      url: https://github.com/mf523/video-stream-bridge
+
+- title: Build GAN (Generative Adversarial Networks) with PyTorch and SageMaker
+  abbr: Example
+  venue: Jupyter notebook in aws/amazon-sagemaker-examples
+  links:
+    - name: Notebook
+      url: https://github.com/aws/amazon-sagemaker-examples/blob/master/advanced_functionality/pytorch_bring_your_own_gan/build_gan_with_pytorch.ipynb
+    - name: Blog
+      url: https://aws.amazon.com/blogs/machine-learning/build-gan-with-pytorch-and-amazon-sagemaker/

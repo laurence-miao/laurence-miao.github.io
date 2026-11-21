@@ -1,0 +1,56 @@
+# Site settings. Built by GitHub Pages' standard Jekyll; no custom plugins needed.
+
+title: Laurence Miao
+# The big heading on the home page (and the name in the navbar on other pages)
+# is the same title split in two: the first part is set in bold.
+# Keep the quotes: they preserve the space before the second part.
+title_bold: Laurence
+title_light: " Miao"
+
+author: Laurence Miao
+description: >-
+  Laurence Miao’s home page: machine learning toys, AWS examples and blog posts,
+  and how-to notes.
+icon: 🧪 # emoji used as the browser-tab icon
+lang: en
+
+url: https://mf523.github.io
+baseurl: ""
+
+# Navbar entries, left to right.
+nav:
+  - title: about
+    url: /
+  - title: notes
+    url: /notes/
+  - title: writing
+    url: /writing/
+  - title: projects
+    url: /projects/
+
+# Icons at the bottom of the home page. `icon` is any Font Awesome class pair,
+# e.g. "fa-brands fa-linkedin" or "fa-solid fa-envelope" (with a mailto: url).
+social:
+  - title: GitHub
+    icon: fa-brands fa-github
+    url: https://github.com/mf523
+  - title: LinkedIn
+    icon: fa-brands fa-linkedin
+    url: https://linkedin.com/in/laurence-miao
+# Optional small line under the icons.
+contact_note:
+
+# Notes live in _posts/ as YYYY-MM-DD-some-title.md
+permalink: /notes/:year/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

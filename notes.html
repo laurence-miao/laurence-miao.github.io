@@ -1,0 +1,25 @@
+---
+layout: default
+title: notes
+permalink: /notes/
+description: How-tos and snippets worth finding again.
+---
+<div class="post">
+  <div class="header-bar">
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.description }}</h2>
+  </div>
+
+  <ul class="post-list">
+    {%- for post in site.posts %}
+    <li>
+      <h3><a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      {%- if post.description %}
+      <p>{{ post.description }}</p>
+      {%- endif %}
+      <p class="post-meta">{{ post.date | date: '%B %d, %Y' }}</p>
+      <p class="post-tags">{% include post_tags.html post=post %}</p>
+    </li>
+    {%- endfor %}
+  </ul>
+</div>

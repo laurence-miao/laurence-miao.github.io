@@ -1,0 +1,40 @@
+{%- comment -%} Notes keep the "notes" tab lit even when a note has a custom permalink. {%- endcomment -%}
+{%- assign current = page.url -%}
+{%- if page.collection == 'posts' -%}{%- assign current = '/notes/' -%}{%- endif %}
+
+    <header>
+      <nav id="navbar" class="navbar fixed-top" aria-label="Main">
+        <div class="container">
+          {%- unless page.url == '/' %}
+          <a class="navbar-brand" href="{{ '/' | relative_url }}"><span class="font-weight-bold">{{ site.title_bold }}</span>{{ site.title_light }}</a>
+          {%- endunless %}
+          <button class="navbar-toggler collapsed" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <div class="navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              {%- for item in site.nav -%}
+                {%- assign active = false -%}
+                {%- if item.url == '/' -%}
+                  {%- if current == '/' -%}{%- assign active = true -%}{%- endif -%}
+                {%- elsif current contains item.url -%}
+                  {%- assign active = true -%}
+                {%- endif %}
+              <li class="nav-item{% if active %} active{% endif %}">
+                <a class="nav-link" href="{{ item.url | relative_url }}"{% if active %} aria-current="page"{% endif %}>{{ item.title }}</a>
+              </li>
+              {%- endfor %}
+              <li class="toggle-container">
+                <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme">
+                  <i class="fa-solid fa-circle-half-stroke" id="light-toggle-system" aria-hidden="true"></i>
+                  <i class="fa-solid fa-moon" id="light-toggle-dark" aria-hidden="true"></i>
+                  <i class="fa-solid fa-sun" id="light-toggle-light" aria-hidden="true"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>

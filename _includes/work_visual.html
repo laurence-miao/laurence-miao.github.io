@@ -1,7 +1,9 @@
 {% if include.visual == 'generator-jury' %}
-<div class="work-visual paper-visual" role="img" aria-label="Structured household records establish fixed reference assessments. A two-tier LLM jury assesses generated narratives independently so the assessments can be compared.">
-  <div class="visual-topics" aria-hidden="true"><span>Source records</span><span>Generated narratives</span></div>
-  <div class="visual-core" aria-hidden="true"><span class="visual-label">Two-tier LLM jury</span><strong>Assessment consistency</strong><span>Fixed references · Independent narrative scoring</span></div>
+<div class="work-visual paper-visual">
+  <a href="{{ '/assets/img/generator-jury-framework.png' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="View full-size generator–jury framework diagram (opens in a new tab)">
+    <img src="{{ '/assets/img/generator-jury-framework.png' | relative_url }}" width="1174" height="472" loading="lazy" decoding="async" alt="Generator–jury framework: household surveys establish reference assessments and feed narrative generation. Two-tier juries assess surveys and narratives separately, followed by paired comparisons of health scores, factors, and actions.">
+    <span class="diagram-caption">View full-size diagram</span>
+  </a>
 </div>
 {% elsif include.visual == 'brilliedu' %}
 <div class="work-visual presentation-visual">

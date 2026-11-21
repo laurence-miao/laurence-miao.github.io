@@ -138,6 +138,7 @@ html[data-theme-setting="light"] #light-toggle-light { display: inline-block; }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
 .project-card { min-width: 0; display: flex; flex-direction: column; border: 1px solid var(--global-divider-color); border-radius: 9px; overflow: hidden; background: var(--global-card-bg-color); }
 .project-card.featured-project { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.project-card.featured-project.diagram-project { grid-template-columns: minmax(0, 1fr); }
 .project-body { display: flex; flex: 1; flex-direction: column; padding: 1.65rem; }
 .project-body h2, .project-body h3 { font-size: 1.5rem; margin-bottom: .8rem; }
 .project-body h2 a, .project-body h3 a { color: var(--global-text-color); text-decoration: none; }
@@ -152,9 +153,13 @@ html[data-theme-setting="light"] #light-toggle-light { display: inline-block; }
 .presentation-visual { min-height: 0; padding: 0; background: #ffffff; }
 .presentation-visual img { display: block; width: 100%; height: auto; }
 .featured-project > .work-visual { border-bottom: 0; border-right: 1px solid var(--global-divider-color); }
+.featured-project.diagram-project > .work-visual { border-right: 0; border-bottom: 1px solid var(--global-divider-color); }
+.paper-visual { min-height: 0; padding: 1.25rem; background: #ffffff; }
+.paper-visual > a { display: block; color: #99178c; }
+.paper-visual img { display: block; width: 100%; height: auto; }
+.diagram-caption { display: block; margin-top: .75rem; font-size: .875rem; text-align: center; }
 .presentation-meta { color: var(--global-text-color-light); font-size: .875rem; }
 .visual-topics { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: .5rem; margin-bottom: 1rem; }
-.paper-visual .visual-topics { grid-template-columns: repeat(2, minmax(0,1fr)); }
 .visual-topics span { padding: .3rem .1rem; border: 1px solid var(--visual-line); border-radius: 4px; text-align: center; font-size: .875rem; color: var(--global-text-color-light); }
 .visual-core { padding: .8rem; text-align: center; border: 1px solid var(--visual-line); border-radius: 6px; background: var(--global-card-bg-color); }
 .visual-core > span, .visual-core > strong { display: block; }

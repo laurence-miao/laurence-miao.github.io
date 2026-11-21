@@ -1,6 +1,6 @@
 <div class="project-grid">
   {% for item in include.items %}
-  <article class="project-card{% if item.featured %} featured-project{% endif %}{% if item.visual == 'generator-jury' %} diagram-project{% endif %}">
+  <article class="project-card{% if item.featured %} featured-project{% endif %}">
     {% include work_visual.html visual=item.visual %}
     <div class="project-body">
       <p class="eyebrow">{{ item.type }}</p>

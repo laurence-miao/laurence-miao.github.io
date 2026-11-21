@@ -1,4 +1,15 @@
 # Curated work, displayed in this order on the homepage and /projects/.
+- title: Scaling workforce training with generative AI
+  type: Interview solution design
+  context: Google Cloud Customer Engineer interview · Passed
+  description: A Google Cloud solution for BrilliEdu, a hypothetical training platform, combining AI-assisted material processing with human review and approved learning plans.
+  url: /projects/brilliedu-google-cloud/
+  visual: brilliedu
+  featured: true
+  presentation_url: https://docs.google.com/presentation/d/1SI7tqlC9ozOQBpEd4n2xd3TPftN-wGWsco5wZLYWkBE/edit?usp=sharing
+  tags: [Google Cloud, Generative AI, Solution architecture]
+  link_label: Explore the solution
+
 - title: Evaluating AI/ML services
   type: Experience overview
   context: Amazon · 2022–2025

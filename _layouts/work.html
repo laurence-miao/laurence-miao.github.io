@@ -8,6 +8,7 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="work-lead">{{ page.description }}</p>
     <dl class="work-facts"><div><dt>Role</dt><dd>{{ page.role }}</dd></div><div><dt>Focus</dt><dd>{{ page.focus }}</dd></div></dl>
+    {% if page.presentation_url %}<div class="hero-actions"><a class="btn btn-primary" href="{{ page.presentation_url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="View presentation in Google Slides (opens in a new tab)">View presentation</a><span class="presentation-meta">Google Slides · {{ page.slide_count }} slides</span></div>{% endif %}
   </header>
   {% include work_visual.html visual=page.visual %}
   <div class="post-content prose">{{ content }}</div>

@@ -1,6 +1,6 @@
 <div class="project-grid">
   {% for item in include.items %}
-  <article class="project-card">
+  <article class="project-card{% if item.featured %} featured-project{% endif %}">
     {% include work_visual.html visual=item.visual %}
     <div class="project-body">
       <p class="eyebrow">{{ item.type }}</p>
@@ -8,7 +8,10 @@
       <p>{{ item.description }}</p>
       <ul class="tag-list" aria-label="Topics">{% for tag in item.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
       <p class="project-context">{{ item.context }}</p>
-      <a class="text-link" href="{{ item.url | relative_url }}" aria-label="{{ item.link_label }}: {{ item.title | escape }}">{{ item.link_label }}</a>
+      <div class="project-links">
+        <a class="text-link" href="{{ item.url | relative_url }}" aria-label="{{ item.link_label }}: {{ item.title | escape }}">{{ item.link_label }}</a>
+        {% if item.presentation_url %}<a class="text-link" href="{{ item.presentation_url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="View presentation: {{ item.title | escape }} (opens in a new tab)">View presentation</a>{% endif %}
+      </div>
     </div>
   </article>
   {% endfor %}

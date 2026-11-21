@@ -2,10 +2,10 @@
 layout: default
 title: CV
 permalink: /cv/
-description: Experience, education, skills, and certificates.
+description: AI/ML evaluation, cloud architecture, and technical program leadership.
 
 # PDF behind the download icon next to the title. Leave empty for no icon.
-# The file is this page printed to PDF, so print it again after editing the CV.
+# Regenerate from _data/cv.yml with scripts/build_assets.py after editing the CV.
 pdf: /assets/pdf/laurence-miao-cv.pdf
 ---
 {%- comment -%}
@@ -14,7 +14,7 @@ pdf: /assets/pdf/laurence-miao-cv.pdf
   table of contents and on the page.
 {%- endcomment -%}
 {%- assign cv = site.data.cv -%}
-{%- assign sections = 'contact|Contact Information,summary|Professional Summary,experience|Experience,education|Education,skills|Skills,certificates|Certificates' | split: ',' -%}
+{%- assign sections = 'contact|Contact Information,summary|Professional Summary,experience|Experience,education|Education,skills|Skills,certificates|Certifications' | split: ',' -%}
 <div class="toc-layout">
   <nav class="toc-sidebar" aria-label="Table of contents">
     <ul>
@@ -34,7 +34,7 @@ pdf: /assets/pdf/laurence-miao-cv.pdf
         <span class="screen-only">{{ page.title }}</span>
         <span class="print-only">{{ site.author }}</span>
         {%- if page.pdf %}
-        <a class="float-right screen-only" href="{{ page.pdf | relative_url }}" target="_blank" rel="noopener" title="Download PDF" aria-label="Download PDF"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i></a>
+        <a class="btn cv-download screen-only" href="{{ page.pdf | relative_url }}">Download CV (PDF)</a>
         {%- endif %}
       </h1>
       <p class="post-description screen-only">{{ page.description }}</p>

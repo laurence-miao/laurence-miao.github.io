@@ -1,10 +1,8 @@
 ---
 layout: page
-title: projects
+title: Selected work
 permalink: /projects/
-description: ML toys and example code.
+description: AI/ML evaluation programs and hands-on machine learning engineering.
 ---
 {%- comment -%} Entries come from _data/projects.yml {%- endcomment -%}
-<div class="publications">
-  {% include entries.html items=site.data.projects %}
-</div>
+{% include project_cards.html items=site.data.projects heading='h2' %}

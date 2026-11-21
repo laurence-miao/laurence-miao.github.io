@@ -1,0 +1,12 @@
+{% if include.visual == 'evaluation' %}
+<div class="work-visual evaluation-visual" role="img" aria-label="AI evaluation spans vision, speech, text, and language models; methodology and analysis inform product recommendations.">
+  <div class="visual-topics" aria-hidden="true"><span>Vision</span><span>Speech</span><span>Text</span><span>LLMs</span></div>
+  <div class="visual-core" aria-hidden="true"><span class="visual-label">Evaluation methodology</span><strong>Evidence informs decisions</strong><span>Data analysis · Product recommendations</span></div>
+</div>
+{% else %}
+<div class="work-visual gan-visual" role="img" aria-label="GAN workflow: a PyTorch model and training data feed managed SageMaker training; model artifacts are stored in S3.">
+  <p class="visual-label" aria-hidden="true">A model, a training job, a reusable artifact</p>
+  <div class="visual-workflow" aria-hidden="true"><div><span>Build</span><strong>PyTorch</strong></div><div><span>Train</span><strong>SageMaker</strong></div><div><span>Store</span><strong>Amazon S3</strong></div></div>
+  <p class="visual-footnote" aria-hidden="true">Custom model · Managed training · Model artifacts</p>
+</div>
+{% endif %}

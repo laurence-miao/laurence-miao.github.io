@@ -1,17 +1,8 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: Machine learning toys, AWS write-ups, and how-to notes.
-
-# Optional picture on the right, al-folio style. Leave `image` empty for none.
-profile:
-  image: # e.g. /assets/img/prof_pic.jpg
-  more_info: # optional lines shown under the picture
-
-latest_notes: 5 # how many notes to list on this page
+description: AI/ML evaluation, cloud architecture, and technical leadership. Explore Laurence Miao's work, published writing, and experience at Amazon and AWS.
 ---
 
-Welcome. This is where I keep things worth finding again: small machine-learning toys, examples and blog posts on AWS, and short how-to notes for setups I’d rather not figure out twice.
-
-The [notes]({{ '/notes/' | relative_url }}) are quick references, mostly commands and snippets. Longer pieces are collected under [writing]({{ '/writing/' | relative_url }}), and the code lives under [projects]({{ '/projects/' | relative_url }}).
+My background spans evaluating AI/ML services, designing cloud solutions, and leading technical programs. Previously a Senior Technical Program Manager at Amazon and Solutions Architect at AWS.

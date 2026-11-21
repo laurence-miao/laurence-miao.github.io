@@ -3,10 +3,11 @@
   <head>
     {%- include head.html %}
   </head>
-  <body class="fixed-top-nav">
+  <body class="fixed-top-nav layout-{{ page.layout }}">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     {%- include header.html %}
 
-    <main class="container mt-5">
+    <main class="container mt-5" id="main-content" tabindex="-1">
       {{ content }}
     </main>
 

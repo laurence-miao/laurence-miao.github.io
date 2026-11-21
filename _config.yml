@@ -9,24 +9,25 @@ title_light: " Miao"
 
 author: Laurence Miao
 description: >-
-  Laurence Miao’s home page: machine learning toys, AWS examples and blog posts,
-  and how-to notes.
+  Laurence Miao — AI/ML evaluation, cloud architecture, and technical leadership.
+  Selected work, published AWS articles, and practical engineering notes.
 icon: 🧪 # emoji used as the browser-tab icon
 lang: en
 
-url: https://mf523.github.io
+url: https://laurence-miao.github.io
 baseurl: ""
+social_image: /assets/img/social-card.png
 
 # Navbar entries, left to right.
 nav:
-  - title: about
+  - title: About
     url: /
-  - title: notes
-    url: /notes/
-  - title: writing
-    url: /writing/
-  - title: projects
+  - title: Work
     url: /projects/
+  - title: Writing
+    url: /writing/
+  - title: Notes
+    url: /notes/
   - title: CV
     url: /cv/
 
@@ -56,3 +57,12 @@ defaults:
       type: posts
     values:
       layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - scripts
+  - requirements-assets.txt
+  - vendor
+  - .bundle

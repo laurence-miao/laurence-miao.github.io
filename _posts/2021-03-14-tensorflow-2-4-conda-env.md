@@ -2,6 +2,8 @@
 title: Install TensorFlow 2.4 in Conda env
 description: Conda environment setup for TensorFlow 2.4, including Apple-silicon (M1) Macs, plus registering the Jupyter kernel.
 tags: [tensorflow, conda, macos]
+archived: true
+archive_note: These commands document a TensorFlow 2.4 and early Apple-silicon setup from 2021. They have not been revalidated for current Python, TensorFlow, or macOS releases.
 permalink: /conda_tf24.html # the address this note had before the site was rebuilt
 ---
 

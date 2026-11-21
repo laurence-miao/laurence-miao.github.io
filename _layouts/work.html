@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="work-page">
+  <a class="text-link back-link" href="{{ '/projects/' | relative_url }}">All selected work</a>
+  <header class="post-header">
+    <p class="eyebrow">{{ page.kind }} · {{ page.period }}</p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="work-lead">{{ page.description }}</p>
+    <dl class="work-facts"><div><dt>Role</dt><dd>{{ page.role }}</dd></div><div><dt>Focus</dt><dd>{{ page.focus }}</dd></div></dl>
+  </header>
+  {% include work_visual.html visual=page.visual %}
+  <div class="post-content prose">{{ content }}</div>
+  <aside class="work-contact"><h2>Continue the conversation</h2><p>Connect about AI evaluation, cloud architecture, or technical program leadership.</p><a class="btn" href="https://www.linkedin.com/in/laurence-miao/">Connect on LinkedIn</a></aside>
+</article>

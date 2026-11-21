@@ -4,11 +4,13 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">Created on {{ page.date | date: '%B %d, %Y' }}</p>
+    <p class="post-meta">Published <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %d, %Y' }}</time></p>
     <p class="post-tags">{% include post_tags.html post=page %}</p>
   </header>
 
   <article class="post-content">
+    {% if page.archived %}<aside class="archive-notice"><strong>Historical reference</strong><p>{{ page.archive_note }}</p></aside>{% endif %}
     {{ content }}
   </article>
+  <p class="back-link"><a class="text-link" href="{{ '/notes/' | relative_url }}">Browse all technical notes</a></p>
 </div>

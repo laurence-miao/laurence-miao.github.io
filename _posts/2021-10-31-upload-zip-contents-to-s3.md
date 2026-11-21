@@ -1,10 +1,12 @@
 ---
-title: How to upload contents in big zip file to AWS S3 bucket without uncompressing
+title: Upload ZIP contents to S3 without extracting to disk
 description: A short boto3 script that uploads every file inside a zip archive to an S3 prefix, without extracting the archive to disk first.
 tags: [aws, s3, python]
+archived: true
+archive_note: This 2021 example avoids writing extracted files to disk. Each file is still decompressed into memory, so memory use depends on the size of the individual file.
 ---
 
-The script reads each file straight out of the archive and puts it under `s3://<bucket>/<prefix>/`, so nothing is unpacked locally. It takes the zip path, the bucket and the prefix as arguments.
+The script decompresses each file in memory and uploads it under `s3://<bucket>/<prefix>/`, without writing an extracted copy to disk. It takes the zip path, the bucket and the prefix as arguments.
 
 ```python
 #!/bin/env python

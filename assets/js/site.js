@@ -26,7 +26,10 @@
 
     var toggle = document.getElementById("light-toggle");
     if (toggle) {
-      toggle.title = "Color theme: " + setting;
+      var nextSetting = SETTINGS[(SETTINGS.indexOf(setting) + 1) % SETTINGS.length];
+      var label = "Color theme: " + setting + ". Switch to " + nextSetting + " theme";
+      toggle.title = label;
+      toggle.setAttribute("aria-label", label);
     }
   }
 
@@ -68,10 +71,27 @@
     var toggler = document.querySelector(".navbar-toggler");
     var menu = document.getElementById("navbarNav");
     if (toggler && menu) {
+      var closeMenu = function (restoreFocus) {
+        menu.classList.remove("show");
+        toggler.classList.add("collapsed");
+        toggler.setAttribute("aria-expanded", "false");
+        if (restoreFocus) { toggler.focus(); }
+      };
       toggler.addEventListener("click", function () {
         var open = menu.classList.toggle("show");
         toggler.classList.toggle("collapsed", !open);
         toggler.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && menu.classList.contains("show")) {
+          closeMenu(true);
+        }
+      });
+      menu.addEventListener("click", function (event) {
+        if (event.target.closest("a")) { closeMenu(false); }
+      });
+      document.addEventListener("click", function (event) {
+        if (!event.target.closest("#navbar")) { closeMenu(false); }
       });
     }
 

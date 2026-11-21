@@ -1,14 +1,11 @@
 ---
 layout: default
-title: notes
+title: Technical notes
 permalink: /notes/
-description: How-tos and snippets worth finding again.
+description: An archive of practical scripts and setup references, with their original dates and version context.
 ---
 <div class="post">
-  <div class="header-bar">
-    <h1>{{ page.title }}</h1>
-    <h2>{{ page.description }}</h2>
-  </div>
+  <header class="post-header"><p class="eyebrow">Engineering notebook</p><h1 class="post-title">{{ page.title }}</h1><p class="post-description">{{ page.description }}</p></header>
 
   <ul class="post-list">
     {%- for post in site.posts %}
@@ -17,7 +14,7 @@ description: How-tos and snippets worth finding again.
       {%- if post.description %}
       <p>{{ post.description }}</p>
       {%- endif %}
-      <p class="post-meta">{{ post.date | date: '%B %d, %Y' }}</p>
+      <p class="post-meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %d, %Y' }}</time>{% if post.archived %} · Historical reference{% endif %}</p>
       <p class="post-tags">{% include post_tags.html post=post %}</p>
     </li>
     {%- endfor %}

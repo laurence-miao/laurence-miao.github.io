@@ -1,0 +1,15 @@
+<div class="project-grid">
+  {% for item in include.items %}
+  <article class="project-card">
+    {% include work_visual.html visual=item.visual %}
+    <div class="project-body">
+      <p class="eyebrow">{{ item.type }}</p>
+      <{{ include.heading | default: 'h3' }}><a href="{{ item.url | relative_url }}">{{ item.title }}</a></{{ include.heading | default: 'h3' }}>
+      <p>{{ item.description }}</p>
+      <ul class="tag-list" aria-label="Topics">{% for tag in item.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+      <p class="project-context">{{ item.context }}</p>
+      <a class="text-link" href="{{ item.url | relative_url }}" aria-label="{{ item.link_label }}: {{ item.title | escape }}">{{ item.link_label }}</a>
+    </div>
+  </article>
+  {% endfor %}
+</div>

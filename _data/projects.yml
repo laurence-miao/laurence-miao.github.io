@@ -1,4 +1,15 @@
 # Curated work, displayed in this order on the homepage and /projects/.
+- title: A Generator–Jury Framework for Synthetic Household Financial Narratives
+  type: Working paper
+  context: Zenodo · November 2026 · Version 0.1
+  description: A framework for evaluating whether synthetic household financial narratives preserve assessments derived from their source records, using a two-tier LLM jury.
+  url: /projects/generator-jury-financial-narratives/
+  visual: generator-jury
+  featured: true
+  paper_url: https://doi.org/10.5281/zenodo.24417790
+  tags: [Synthetic data, LLM evaluation, Research]
+  link_label: Explore the paper
+
 - title: Scaling workforce training with generative AI
   type: Interview solution design
   context: Google Cloud Customer Engineer interview · Passed

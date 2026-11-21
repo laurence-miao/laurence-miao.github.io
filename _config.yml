@@ -27,7 +27,7 @@ nav:
     url: /writing/
   - title: projects
     url: /projects/
-  - title: cv
+  - title: CV
     url: /cv/
 
 # Icons at the bottom of the home page. `icon` is any Font Awesome class pair,

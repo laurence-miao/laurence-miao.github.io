@@ -1,4 +1,17 @@
 # Homepage follows this curated order; /writing/ groups entries by publication year.
+- title: A Generator–Jury Framework for Synthetic Household Financial Narratives
+  abbr: Working paper
+  venue: Zenodo · Version 0.1
+  date: 2026-11-21
+  language: English
+  description: By Feng Miao and Noorhan Abbas. A framework for assessing consistency between synthetic financial narratives and their source records. Public abstract; full text restricted on Zenodo.
+  selected: true
+  links:
+    - name: View Zenodo record
+      url: https://doi.org/10.5281/zenodo.24417790
+    - name: Research overview
+      url: /projects/generator-jury-financial-narratives/
+
 - title: Build GAN with PyTorch and Amazon SageMaker
   abbr: AWS ML
   venue: AWS Machine Learning Blog

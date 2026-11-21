@@ -687,6 +687,124 @@ article > h2 {
   font-size: 0.8rem;
 }
 
+/* ---------- CV ---------- */
+
+.cv .card {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.25rem;
+}
+
+.cv .card-title {
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.cv .table-cv {
+  border-collapse: collapse;
+}
+
+.cv .table-cv th,
+.cv .table-cv td {
+  padding: 0.25rem 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.cv .table-cv th {
+  padding-left: 0;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.cv .table-cv td {
+  overflow-wrap: anywhere;
+}
+
+.cv-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cv-list > li {
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.cv-list > li:first-child {
+  border-top: 0;
+}
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: 9.5rem minmax(0, 1fr);
+  column-gap: 1.5rem;
+}
+
+.cv-when {
+  text-align: center;
+}
+
+.cv-when .location {
+  margin: 0.25rem 0 0;
+  font-size: 0.7rem;
+}
+
+.cv-when .location i {
+  font-size: 0.8rem;
+  color: var(--global-theme-color);
+}
+
+.cv-what .title {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cv-what .organization,
+.cv-what .area {
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.cv-what .area {
+  font-style: italic;
+}
+
+.cv .items {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.cv-what .items {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  list-style-type: circle;
+}
+
+.cv-what .items li {
+  margin-bottom: 0.25rem;
+}
+
+.cv-item {
+  padding: 0.5rem 0;
+}
+
+@media (max-width: 575.98px) {
+  .cv-entry {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.5rem;
+  }
+
+  .cv-when {
+    text-align: left;
+  }
+}
+
 /* ---------- Notes index ---------- */
 
 .header-bar {

@@ -1,0 +1,77 @@
+---
+layout: page
+title: cv
+permalink: /cv/
+description: Experience, education, skills, and certificates.
+
+# Optional PDF download icon next to the title. Leave empty for none.
+pdf: # e.g. /assets/pdf/cv.pdf
+---
+{%- comment -%} Content comes from _data/cv.yml {%- endcomment -%}
+{%- assign cv = site.data.cv -%}
+<div class="cv">
+  {%- if cv.contact.size > 0 %}
+  <section class="card">
+    <h2 class="card-title" id="contact">Contact Information</h2>
+    <table class="table-cv">
+      {%- for row in cv.contact %}
+      <tr>
+        <th scope="row">{{ row.label | escape }}</th>
+        <td>
+          {%- if row.url -%}
+          <a href="{{ row.url }}"{% if row.url contains '://' %} target="_blank" rel="external noopener"{% endif %}>{{ row.value | escape }}</a>
+          {%- else -%}
+          {{ row.value | escape }}
+          {%- endif -%}
+        </td>
+      </tr>
+      {%- endfor %}
+    </table>
+  </section>
+  {%- endif %}
+
+  {%- if cv.summary.size > 0 %}
+  <section class="card">
+    <h2 class="card-title" id="summary">Professional Summary</h2>
+    <ul class="items">
+      {%- for line in cv.summary %}
+      <li>{{ line | escape }}</li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  {%- if cv.experience.size > 0 %}
+  <section class="card">
+    <h2 class="card-title" id="experience">Experience</h2>
+    {% include cv_entries.html items=cv.experience %}
+  </section>
+  {%- endif %}
+
+  {%- if cv.education.size > 0 %}
+  <section class="card">
+    <h2 class="card-title" id="education">Education</h2>
+    {% include cv_entries.html items=cv.education %}
+  </section>
+  {%- endif %}
+
+  {%- if cv.skills.size > 0 %}
+  <section class="card">
+    <h2 class="card-title" id="skills">Skills</h2>
+    {%- for skill in cv.skills %}
+    <div class="cv-item"><i class="fa-solid fa-hashtag" aria-hidden="true"></i> <strong>{{ skill.name | escape }}:</strong> {{ skill.keywords | join: ', ' | escape }}</div>
+    {%- endfor %}
+  </section>
+  {%- endif %}
+
+  {%- if cv.certificates.size > 0 %}
+  <section class="card">
+    <h2 class="card-title" id="certificates">Certificates</h2>
+    <ul class="cv-list">
+      {%- for certificate in cv.certificates %}
+      <li><i class="fa-solid fa-certificate" aria-hidden="true"></i> <strong>{{ certificate.name | escape }}</strong></li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+</div>

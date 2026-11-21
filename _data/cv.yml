@@ -1,0 +1,125 @@
+# Shown on /cv/. A section with no entries is left out of the page.
+#
+# contact:      label + value, and optionally url.
+# summary:      one line per bullet.
+# experience,
+# education:    newest first. Fields: title (required), organization, area,
+#               location, start, end (free text such as "Jan 2022"; leave end
+#               empty for "Present"), highlights (one line per bullet).
+# skills:       name + keywords.
+# certificates: name.
+
+contact:
+  - label: Name
+    value: Laurence Miao
+  - label: Title
+    value: Business Analyst, CTO, Entrepreneur
+  - label: Email
+    value: laurence.miao@gmail.com
+    url: mailto:laurence.miao@gmail.com
+  - label: LinkedIn
+    value: linkedin.com/in/laurence-miao
+    url: https://linkedin.com/in/laurence-miao
+
+summary:
+  - 2 years of data analytics experience
+  - 4 years of machine learning experience
+  - 4 years of program and team management experience
+  - 5 years of cloud computing experience
+  - 8 years of software development experience
+
+experience:
+  - title: Sr. Technical Program Manager
+    organization: Amazon.com Services
+    location: UK & California
+    start: Jan 2022
+    end: May 2025
+    highlights:
+      - Own programs to evaluate Amazon AI/ML service performance, such as, Video Defect Detection, ASR, OCR and LLM, deliver product improvement recommendations to service teams
+      - Cloud infrastructure architecting, hands-on coding for large scale data analytics, and engineer coaching
+      - Work cross-organization, cross-project to gather requirements, design the technical methodology, provide oversight and achieve approval of the methodology design
+      - Build program plans and roadmaps, collaborate with the business owner to prioritize milestones and deliverables, get leadership approval
+      - Create program artifacts, such as requirement analysis, methodology design, project plan, resource and timeline, communication plan
+      - Communicate the program status across the organization to stakeholders, collect feedback with subject matter experts
+      - Identify pain points, make proposals to continuously improve Software development lifecycle, tool chain, and evaluation operation
+      - Manage dependencies, remove blockers, continuously drive execution, and accountability
+
+  - title: Solutions Architect
+    organization: AWS
+    location: China & UK
+    start: Nov 2018
+    end: Dec 2021
+    highlights:
+      - Professional AWS Solutions Architect, helping customers build applications on AWS platform
+      - Supporting UK and EU based enterprise customers, in solution design and prototyping
+      - AWS cloud business case analytics
+      - AI / ML and AWS cloud solutions architecting and consultation
+      - AWS cloud operation support and troubleshooting
+      - AWS cloud-based native application architecting
+      - Legacy software refactor and migration to AWS cloud environment
+      - AI / ML and AWS cloud-native technology and solutions evangelism
+      - AWS cloud and AI / ML technical training, Developer mentoring
+
+  - title: Dev team manager
+    organization: TLScontact (a Teleperformance company)
+    location: China
+    start: Nov 2012
+    end: Aug 2018
+
+  - title: Tech manager
+    organization: Rocket-Internet (Beijing)
+    location: China
+    start: Sep 2011
+    end: Sep 2012
+
+  - title: Senior Developer
+    organization: Accessport
+    location: China
+    start: May 2008
+    end: Aug 2011
+
+  - title: Web Application Developer
+    organization: StarSoftComm
+    location: China
+    start: May 2004
+    end: Apr 2008
+
+education:
+  - title: Master of Business Administration
+    organization: Santa Clara University
+    area: STEM MBA
+    start: Sep 2023
+    end:
+
+  - title: Master of Science
+    organization: University of Leeds
+    area: Artificial Intelligence
+    start: Mar 2023
+    end: Dec 2026
+
+  - title: Bachelor of Science
+    organization: Peking University
+    area: Computer and Application
+    start: Sep 2013
+    end: Jun 2017
+
+  - title: Associate
+    organization: Liaoning Radio & TV University
+    area: Computer and Application
+    start: Sep 1998
+    end: Jun 2001
+
+skills:
+  - name: Machine Learning
+    keywords: [LLM, NLP, Computer Vision, Reinforcement Learning]
+  - name: AWS
+    keywords: [EC2, Aurora, Kinesis, Athena, StepFunctions, DynamoDB, Lambda, Transcribe, Textract, Bedrock, SageMaker, EventBridge, S3, EMR, EKS]
+  - name: Python
+    keywords: [pandas, sk-learn, PyTorch, LightGBM]
+
+certificates:
+  - name: AWS Certified Solutions Architect - Professional
+  - name: AWS Certified Machine Learning - Specialty
+  - name: AWS Certified Analytics - Specialty
+  - name: Project Management Professional
+  - name: Scrum Master

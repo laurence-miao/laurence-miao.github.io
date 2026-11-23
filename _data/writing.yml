@@ -1,4 +1,15 @@
 # Homepage follows this curated order; /writing/ groups entries by publication year.
+- title: My favorite AI agent skills
+  abbr: Resources
+  venue: Personal collection
+  date: 2026-11-23
+  language: English
+  description: Two favorite collections of AI agent skills for software engineering and research-paper writing, with useful starting points from each.
+  selected: false
+  links:
+    - name: Read article
+      url: /writing/favorite-skills/
+
 - title: A Generator–Jury Framework for Synthetic Household Financial Narratives
   abbr: Working paper
   venue: Zenodo · Version 0.1

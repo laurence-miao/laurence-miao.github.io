@@ -10,7 +10,7 @@
     - name: Read article
       url: /writing/favorite-skills/
 
-- title: A Generator–Jury Framework for Synthetic Household Financial Narratives
+- title: "Synthetic Household Financial Narratives: A Dataset and Evaluation Study"
   abbr: Working paper
   venue: Zenodo · Version 0.1
   date: 2026-11-21
@@ -19,7 +19,7 @@
   selected: true
   links:
     - name: View Zenodo record
-      url: https://doi.org/10.5281/zenodo.24417790
+      url: https://doi.org/10.5281/zenodo.24417789
     - name: Research overview
       url: /projects/generator-jury-financial-narratives/
 

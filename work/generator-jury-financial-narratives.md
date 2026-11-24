@@ -1,6 +1,6 @@
 ---
 layout: work
-title: A Generator–Jury Framework for Synthetic Household Financial Narratives
+title: "Synthetic Household Financial Narratives: A Dataset and Evaluation Study"
 permalink: /projects/generator-jury-financial-narratives/
 description: A working paper on evaluating whether generated financial narratives preserve assessments implied by structured household records.
 kind: Working paper
@@ -8,7 +8,7 @@ period: November 2026 · Version 0.1
 role: Co-author
 focus: Assessment consistency in synthetic data
 visual: generator-jury
-paper_url: https://doi.org/10.5281/zenodo.24417790
+paper_url: https://doi.org/10.5281/zenodo.24417789
 ---
 
 ## Research question
@@ -30,6 +30,6 @@ The public abstract reports a **32% reduction in the average gap between narrati
 **Authors:** Feng Miao and Noorhan Abbas.  
 **Published:** November 21, 2026, on Zenodo.  
 **Status:** Working paper, version 0.1.  
-**DOI:** [10.5281/zenodo.24417790](https://doi.org/10.5281/zenodo.24417790).
+**DOI:** [10.5281/zenodo.24417789](https://doi.org/10.5281/zenodo.24417789).
 
 This overview summarizes the public abstract. The paper's full-text files are restricted on Zenodo.

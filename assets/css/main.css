@@ -128,7 +128,6 @@ html[data-theme-setting="light"] #light-toggle-light { display: inline-block; }
 .profile-identifier { margin: 1.25rem 0 0; }
 .orcid-link { display: inline-flex; align-items: center; gap: .5rem; max-width: 100%; font-size: .875rem; }
 .orcid-link img { flex-shrink: 0; width: 1em; height: 1em; }
-.orcid-link span { min-width: 0; overflow-wrap: anywhere; }
 .home-section { padding: 3.6rem 0; border-top: 1px solid var(--global-divider-color); }
 .section-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; margin-bottom: 2rem; }
 .section-heading h2 { margin-bottom: 0; }

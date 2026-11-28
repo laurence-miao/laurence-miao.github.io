@@ -94,48 +94,5 @@
         if (!event.target.closest("#navbar")) { closeMenu(false); }
       });
     }
-
-    // Table of contents: mark the section being read.
-    var tocLinks = Array.prototype.slice.call(document.querySelectorAll(".toc-sidebar a"));
-    if (tocLinks.length) {
-      var NAVBAR_CLEARANCE = 90; // px: a heading above this line counts as reached
-      var heldUntil = 0;
-
-      var markActive = function (active) {
-        tocLinks.forEach(function (link) {
-          link.classList.toggle("active", link === active);
-        });
-      };
-
-      var onScroll = function () {
-        if (Date.now() < heldUntil) {
-          return;
-        }
-        // Near the end of the page the line slides down to the bottom of the
-        // window, so the last, short sections get their turn too.
-        var page = document.documentElement;
-        var remaining = page.scrollHeight - window.innerHeight - window.scrollY;
-        var line = Math.max(NAVBAR_CLEARANCE, window.innerHeight - remaining);
-        var active = tocLinks[0];
-        tocLinks.forEach(function (link) {
-          var heading = document.getElementById(link.hash.slice(1));
-          if (heading && heading.getBoundingClientRect().top <= line) {
-            active = link;
-          }
-        });
-        markActive(active);
-      };
-
-      tocLinks.forEach(function (link) {
-        link.addEventListener("click", function () {
-          // The jump itself scrolls the page; keep the clicked entry marked through it.
-          markActive(link);
-          heldUntil = Date.now() + 500;
-        });
-      });
-
-      window.addEventListener("scroll", onScroll, { passive: true });
-      onScroll();
-    }
   });
 })();

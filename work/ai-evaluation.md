@@ -24,5 +24,3 @@ At Amazon, I owned programs evaluating AI/ML service performance across video de
 ## Connecting evidence to action
 
 The program outputs included evaluation methodologies, data analysis, product improvement recommendations, and delivery plans. These brought engineering findings and stakeholder decisions into the same process.
-
-This overview describes the scope of my role. The accompanying [CV]({{ '/cv/' | relative_url }}) provides the employment history and related experience.
